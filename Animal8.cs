@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp8
+{
+    class Animal8
+    {
+        public string Name {  get; set; }
+        public Animal8 (string name = "No Name") { Name = name; }
+        //T represents an unknown data type
+        public static void GetSum<T>(ref T num1, ref T num2)
+        {
+            double dblX = Convert.ToDouble(num1);
+            double dblY = Convert.ToDouble(num2);
+            Console.WriteLine($"{dblX} + {dblY} = {dblX + dblY}");
+        }
+    }
+}
